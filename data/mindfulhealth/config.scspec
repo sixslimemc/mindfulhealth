@@ -1,0 +1,86 @@
+{
+    health: {
+        recovery: {
+            ticks_per_damage: {
+                min: int
+                = 600
+                #
+
+                max: int
+                = 1800
+                #
+            }
+            # ticks added per damage, scaling with missing hunger.
+            
+            hunger_scale: {
+                min: int
+                = 0
+                #
+
+                max: int
+                = 20
+                #
+
+            }
+
+            max_ticks: int
+            #
+            = 12000
+
+            regeneration: {
+                interval_ticks: int
+                = 200
+                #
+
+                amount: int
+                = 1
+                #
+
+            }
+
+            sleep_restore_percent: float
+            = 1.0
+        }
+    }
+
+    item_changes: {
+        golden_apple: {
+            enable: bool
+            = true
+            #
+
+            remove_regeneration: bool
+            = true
+            #
+
+            stack_size: int
+            = 16
+            #
+
+        }
+
+        strong_health_potion: {
+            enable: bool
+            = true
+            #
+
+            replacement_effects[]: {
+                id: $effectID
+                duration: int
+                amplifier: byte
+            }
+            = [
+                {
+                    id: "minecraft:health_boost"
+                    duration: 3600
+                    amplifier: 0b
+                },
+                {
+                    id: "minecraft:instant_health"
+                    duration: 1
+                    amplifier: 0b
+                }
+            ]
+        }
+    }
+}
