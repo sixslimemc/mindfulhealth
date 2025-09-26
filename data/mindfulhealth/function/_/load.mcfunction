@@ -19,3 +19,6 @@ scoreboard players reset *init _mindfulhealth
 
 execute unless score *init _mindfulhealth matches 1 run function mindfulhealth:_/init
 scoreboard players set *init _mindfulhealth 1
+
+# cache:
+function mindfulhealth:_/cache/main

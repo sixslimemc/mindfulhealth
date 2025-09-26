@@ -11,3 +11,4 @@ scoreboard players operation @s _mindfulhealth.dx_health = @s _mindfulhealth.hea
 
 # return if its not damage:
 execute if score *x _mindfulhealth matches ..0 run return 0
+
