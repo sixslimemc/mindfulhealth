@@ -14,7 +14,6 @@ scoreboard players operation @s _mindfulhealth.dx_health = @s _mindfulhealth.hea
 # return if its not damage:
 execute if score *health.damage _mindfulhealth matches ..0 run return 0
 
-
 # *x = recovery add amount:
 scoreboard players set *prec _mindfulhealth 100
 scoreboard players operation *x _mindfulhealth = @s _mindfulhealth.food
@@ -29,9 +28,6 @@ scoreboard players operation *x _mindfulhealth *= *y _mindfulhealth
 scoreboard players operation *x _mindfulhealth /= *prec _mindfulhealth
 scoreboard players operation *x _mindfulhealth += *cache.recovery.ticks_per_damage.min _mindfulhealth
 scoreboard players operation *x _mindfulhealth *= *health.damage _mindfulhealth
-
-# DEBUG:
-tellraw @a ["recovery add: ", {'score':{'name':'*x', 'objective':'_mindfulhealth'}}]
 
 # add to recovery time:
 scoreboard players operation @s mindfulhealth.recovery_time += *x _mindfulhealth

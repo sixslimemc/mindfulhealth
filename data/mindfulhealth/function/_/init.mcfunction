@@ -14,3 +14,8 @@ data modify storage mindfulhealth:config health.recovery.hunger_scale.min set va
 data modify storage mindfulhealth:config health.recovery.hunger_scale.max set value 20
 
 data modify storage mindfulhealth:config health.recovery.max_ticks set value 12000
+
+data modify storage mindfulhealth:config health.recovery.regeneration.interval_ticks set value 200
+data modify storage mindfulhealth:config health.recovery.regeneration.amount set value 1
+
+data modify storage mindfulhealth:config health.recovery.sleep_restore_percent set value 1f
