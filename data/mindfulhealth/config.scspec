@@ -65,7 +65,7 @@
             #
 
             replacement_effects[]: {
-                id: $effectID
+                id: $effect
                 duration: int
                 amplifier: byte
             }
