@@ -14,6 +14,8 @@ data modify storage slimecore:in manifest.expected_order set value {tick:1b}
 
 data modify storage slimecore:in manifest.dependencies append value {pack:"itemd", url:"TODO", version:{major:1, minor:0, patch:0}}
 data modify storage slimecore:in manifest.dependencies append value {pack:"eotheal", url:"TODO", version:{major:1, minor:0, patch:0}}
+data modify storage slimecore:in manifest.dependencies append value {pack:"islept", url:"TODO", version:{major:1, minor:0, patch:0}}
+data modify storage slimecore:in manifest.dependencies append value {pack:"idied", url:"TODO", version:{major:1, minor:0, patch:0}}
 
 data modify storage slimecore:in manifest.library set value false
 data modify storage slimecore:in manifest.abstract set value false
