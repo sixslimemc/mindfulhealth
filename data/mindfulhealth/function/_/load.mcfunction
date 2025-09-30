@@ -14,6 +14,8 @@ scoreboard objectives add _mindfulhealth.dx_health dummy
 scoreboard objectives add _mindfulhealth.health health
 scoreboard objectives add _mindfulhealth.food food
 
+scoreboard players set *1000 _mindfulhealth 1000
+
 # DEBUG
 scoreboard players reset *init _mindfulhealth
 
